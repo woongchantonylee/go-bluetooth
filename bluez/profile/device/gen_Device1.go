@@ -6,9 +6,9 @@ package device
 
 import (
    "sync"
-   "github.com/muka/go-bluetooth/bluez"
-   "github.com/muka/go-bluetooth/util"
-   "github.com/muka/go-bluetooth/props"
+   "github.com/woongchantonylee/go-bluetooth/bluez"
+   "github.com/woongchantonylee/go-bluetooth/util"
+   "github.com/woongchantonylee/go-bluetooth/props"
    "github.com/godbus/dbus"
 )
 
