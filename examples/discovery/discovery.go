@@ -4,10 +4,10 @@ package discovery_example
 import (
 	"context"
 
-	"github.com/woongchantonylee/go-bluetooth/api"
-	"github.com/woongchantonylee/go-bluetooth/api/beacon"
-	"github.com/woongchantonylee/go-bluetooth/bluez/profile/adapter"
-	"github.com/woongchantonylee/go-bluetooth/bluez/profile/device"
+	"github.com/muka/go-bluetooth/api"
+	"github.com/muka/go-bluetooth/api/beacon"
+	"github.com/muka/go-bluetooth/bluez/profile/adapter"
+	"github.com/muka/go-bluetooth/bluez/profile/device"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -73,10 +73,10 @@ func handleBeacon(dev *device.Device1) error {
 		return err
 	}
 
-	beaconUpdated, err := b.WatchDeviceChanges(context.Background())
+	/*beaconUpdated, err := b.WatchDeviceChanges(context.Background())
 	if err != nil {
 		return err
-	}
+	}*/
 
 	isBeacon := <-beaconUpdated
 	if !isBeacon {
